@@ -1,0 +1,15 @@
+programa demo;
+vars:
+  x, y : entero;
+  z : flotante;
+inicio
+  x = 10;
+  y = x + 5 * 2;
+  si (y > 12)
+    escribe("mayor", y);
+  sino
+    escribe("no mayor");
+  mientras (x < y) haz
+    x = x + 1;
+  escribe("fin");
+fin
