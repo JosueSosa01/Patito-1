@@ -1,0 +1,15 @@
+programa ejemplo;
+vars:
+  x : entero;
+  y : flotante;
+  z : flotante;
+inicio
+  x = 10;
+  y = x / 2;
+  si (x > 20);
+    escribe("mayor", y)
+  sino
+    escribe("no mayor");
+  escribe("fin");
+fin
+
