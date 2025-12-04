@@ -1,0 +1,26 @@
+programa factorial_iter;
+vars:
+  n, r : entero;
+
+func fact_iter(n : entero) : entero
+vars:
+  res, i : entero;
+  si (n <= 1) {
+    ret 1;
+  };
+  sino {
+    res = 1;
+    i = 2;
+    mientras (i <= n) haz {
+      res = res * i;
+      i = i + 1;
+    };
+    ret res;
+  };
+finf
+
+inicio
+  n = 6;
+  r = fact_iter(n);
+  escribe("factorial iter", r);
+fin

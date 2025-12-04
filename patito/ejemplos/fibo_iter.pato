@@ -1,0 +1,29 @@
+programa fibo_iter;
+vars:
+  n, r : entero;
+
+func fib_iter(n : entero) : entero
+vars:
+  a, b, i, next : entero;
+  si (n <= 0)
+    ret 0;
+  sino
+    si (n == 1)
+      ret 1;
+    sino
+      a = 0;
+      b = 1;
+      i = 2;
+      mientras (i <= n) haz
+        next = a + b;
+        a = b;
+        b = next;
+        i = i + 1;
+      ret b;
+finf
+
+inicio
+  n = 7;
+  r = fib_iter(n);
+  escribe("fibo iter", r);
+fin

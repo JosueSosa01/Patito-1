@@ -1,0 +1,22 @@
+programa fibo_main;
+vars:
+  n, a, b, i, next : entero;
+
+inicio
+  n = 7;
+  a = 0;
+  b = 1;
+  si (n == 0)
+    escribe("fibo main", 0);
+  sino
+    si (n == 1)
+      escribe("fibo main", 1);
+    sino
+      i = 2;
+      mientras (i <= n) haz
+        next = a + b;
+        a = b;
+        b = next;
+        i = i + 1;
+      escribe("fibo main", b);
+fin

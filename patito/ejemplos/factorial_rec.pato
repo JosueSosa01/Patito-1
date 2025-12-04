@@ -1,0 +1,16 @@
+programa factorial_rec;
+vars:
+  n, r : entero;
+
+func fact_rec(n : entero) : entero
+  si (n <= 1)
+    ret 1;
+  sino
+    ret n * fact_rec(n - 1);
+finf
+
+inicio
+  n = 6;
+  r = fact_rec(n);
+  escribe("factorial rec", r);
+fin

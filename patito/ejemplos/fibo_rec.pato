@@ -1,0 +1,25 @@
+programa FibonacciRecursivo;
+vars
+  n: entero;
+  resultado: entero;
+
+funcs
+  fibonacciRecursivo(x: entero): entero {
+    si (x == 0) {
+      ret 0;
+    };
+    sino {
+      si (x == 1) {
+        ret 1;
+      }
+      sino {
+        ret fibonacciRecursivo(x - 1) + fibonacciRecursivo(x - 2);
+      };
+    }
+  };
+
+inicio
+  n = 6;
+  resultado = fibonacciRecursivo(n);
+  imprime(resultado);
+fin;

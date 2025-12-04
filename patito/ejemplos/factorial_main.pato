@@ -1,0 +1,14 @@
+programa factorial_main;
+vars:
+  n, res, i : entero;
+
+inicio
+  n = 6;
+  res = 1;
+  i = 2;
+  mientras (i <= n) haz {
+    res = res * i;
+    i = i + 1;
+  };
+  escribe("factorial main", res);
+fin
